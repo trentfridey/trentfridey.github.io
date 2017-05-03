@@ -1,0 +1,22 @@
+body{
+  margin:60px;
+}
+
+nav{
+  padding:30px;
+  background-color: grey;
+  text-align: right;
+}
+nav a {
+  color: darkgrey;
+  font-family:sans-serif;
+  text-decoration: none;
+  border-bottom: 2px dotted darkgrey;
+}
+
+h1{
+  padding:10px;
+  color:white;
+  background-color:black;
+  font-family:"Segoe UI Light" sans-serif;
+}
