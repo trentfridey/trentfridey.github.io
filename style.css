@@ -4,19 +4,23 @@ body{
 
 nav{
   padding:30px;
-  background-color: grey;
+  background-color: darkgrey;
   text-align: right;
 }
 nav a {
-  color: darkgrey;
+  color: lightgrey;
   font-family:sans-serif;
   text-decoration: none;
-  border-bottom: 2px dotted darkgrey;
+  border-bottom: 2px dotted lightgrey;
 }
-
+div{
+  background-color:lightgrey;
+  padding:20px;
+}
 h1{
   padding:10px;
   color:white;
   background-color:black;
   font-family:"Segoe UI Light" sans-serif;
+  font-weight:normal;
 }
