@@ -12,13 +12,14 @@ h1{
   font-family:"Segoe UI Light" sans-serif;
   font-weight:normal;
 }
-
+table {
+  margin:20px;
+}
 td {
   padding: 10px;
   text-align: center;
   vertical-align: middle;
   border: 1px solid black;
-  margin: 25px;
 }
 p {
   padding: 20px;
@@ -30,21 +31,22 @@ button {
   border-bottom: 2px solid #333333;
   border-radius: 3px;
 }
-#nav{
-  background-color: darkgrey;
-  text-align: right;
+.nav{
+  background-color: black;
 }
-#nav a {
+.nav#links {
   color: white;
   font-family:sans-serif;
   text-decoration: none;
-  border-bottom: 2px dotted lightgrey;
+  border-bottom: 1px dashed lightgrey;
+  width:200px;
   display:inline;
 }
-#nav h1 {
+.nav#title {
   color:white;
   font-family: "Segoe UI Light" sans-serif;
   font-weight:normal;
+  width:375px;
   display:inline;
   text-align: left;
 }
