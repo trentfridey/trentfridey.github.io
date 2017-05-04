@@ -3,7 +3,7 @@ body{
 }
 div{
   background-color:lightgrey;
-  width:450px;
+  width:575px;
 }
 h1{
   padding:10px;
@@ -12,11 +12,13 @@ h1{
   font-family:"Segoe UI Light" sans-serif;
   font-weight:normal;
 }
+
 td {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   vertical-align: middle;
   border: 1px solid black;
+  margin: 25px;
 }
 p {
   padding: 20px;
@@ -31,16 +33,18 @@ button {
 #nav{
   background-color: darkgrey;
   text-align: right;
-  display: inline;
 }
 #nav a {
   color: white;
   font-family:sans-serif;
   text-decoration: none;
   border-bottom: 2px dotted lightgrey;
+  display:inline;
 }
 #nav h1 {
   color:white;
   font-family: "Segoe UI Light" sans-serif;
   font-weight:normal;
+  display:inline;
+  text-align: left;
 }
