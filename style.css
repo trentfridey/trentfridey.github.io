@@ -32,21 +32,19 @@ button {
   border-radius: 3px;
 }
 .nav{
+  color:white;
   background-color: black;
 }
 .nav#links {
-  color: white;
   font-family:sans-serif;
-  text-decoration: none;
-  border-bottom: 1px dashed lightgrey;
-  width:200px;
   display:inline;
+  text-align:right;
+  text-decoration: none;
 }
 .nav#title {
-  color:white;
   font-family: "Segoe UI Light" sans-serif;
+  font-size: 24px;
   font-weight:normal;
-  width:375px;
   display:inline;
   text-align: left;
 }
