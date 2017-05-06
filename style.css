@@ -4,6 +4,7 @@ body{
 div{
   background-color:lightgrey;
   width:575px;
+  margin-top:0px;
 }
 h1{
   padding:10px;
@@ -39,6 +40,7 @@ button {
   display:flex;
   flex-direction:row;
   justify-content: space-between;
+  align-items:center;
 }
 #links {
   font-family:sans-serif;
@@ -46,9 +48,16 @@ button {
   flex-grow:1;
   flex-basis:0;
   text-align:right;
-  text-decoration: none;
   padding:0px;
   margin:0px;
+}
+#links a {
+  text-decoration: none;
+  border-bottom: 2px dotted white;
+}
+#links a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid white;
 }
 #title {
   font-family: "Segoe UI Light" sans-serif;
@@ -59,4 +68,8 @@ button {
   text-align: left;
   padding:0px;
   margin:0px;
+}
+#Message {
+  display:block;
+  height:250px;
 }
