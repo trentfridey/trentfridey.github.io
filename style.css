@@ -35,17 +35,22 @@ button {
   color:white;
   background-color: black;
   padding:10px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
 }
 #links {
   font-family:sans-serif;
-  display:inline;
+  order:2;
+  flex-grow:1;
   text-align:right;
   text-decoration: none;
 }
 #title {
   font-family: "Segoe UI Light" sans-serif;
-  font-size: 24px;
+  font-size: 36px;
   font-weight:normal;
-  display:inline;
+  order:1;
+  flex-grow:2;
   text-align: left;
 }
