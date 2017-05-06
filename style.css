@@ -54,7 +54,7 @@ button {
   font-family: "Segoe UI Light" sans-serif;
   font-size: 36px;
   order:1;
-  flex-grow:3;
+  flex-grow:2;
   flex-basis:0;
   text-align: left;
   padding:0px;
