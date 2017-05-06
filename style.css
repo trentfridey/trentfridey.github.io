@@ -45,12 +45,13 @@ button {
   flex-grow:1;
   text-align:right;
   text-decoration: none;
+  padding:0px;
 }
 #title {
   font-family: "Segoe UI Light" sans-serif;
   font-size: 36px;
-  font-weight:normal;
   order:1;
-  flex-grow:2;
+  flex-grow:3;
   text-align: left;
+  padding:0px;
 }
