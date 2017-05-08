@@ -1,6 +1,10 @@
 .container h2{
   color:#339f77;
 }
+.container {
+  padding-top:100px;
+  padding-bottom:100px;
+}
 .nav.navbar-nav.navbar-right li a{
   color: #339F77;
 }
@@ -8,11 +12,19 @@
   background-color: #339F77;
   color:white;
 }
-.navbar-header.navbar-brand {
+.container.navbar-header.navbar-brand a{
   color:#339F77;
   font-family:"Segoe UI Light" monospace;
 }
-.jumbotron.container{
+.container.navbar-header.navbar-brand a:hover{
+  color:#339F77;
+  font-family:"Segoe UI Light" monospace;
+}
+.jumbotron.container h2{
+  background-color:#339f77;
+  color:white;
+}
+#contact {
   background-color:#339f77;
   color:white;
 }
