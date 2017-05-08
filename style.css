@@ -8,15 +8,16 @@
   background-color: #339F77;
   color:white;
 }
-.container.navbar-header.navbar-brand a{
+#brand{
   color:#339F77;
   font-family:"Segoe UI Light" monospace;
 }
-.container.navbar-header.navbar-brand a:hover{
-  color:#339F77;
+#brand:hover{
+  background-color:#339F77;
+  color:white;
   font-family:"Segoe UI Light" monospace;
 }
-.jumbotron.container h2{
+.jumbotron{
   background-color:#339f77;
   color:white;
 }
