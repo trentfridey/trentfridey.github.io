@@ -5,6 +5,7 @@
   background-color: #339F77;
   color:white;
 }
-.navbar-brand a {
+.navbar-header.navbar-brand a {
   color:#339F77;
+  font-family:"Segoe UI Light" monospace;
 }
