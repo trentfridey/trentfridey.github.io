@@ -1,7 +1,10 @@
-.navbar-nav li a{
+.nav.navbar-nav.navbar-right li a{
   color: #339F77;
 }
-.navbar-nav li a:hover{
+.nav.navbar-nav.navbar-right li a:hover{
   background-color: #339F77;
   color:white;
+}
+.navbar-brand a {
+  color:#339F77;
 }
