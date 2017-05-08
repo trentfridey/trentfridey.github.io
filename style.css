@@ -1,3 +1,11 @@
+.nav-pills li a{
+  color: #339F77;
+}
 .nav-pills li a:hover{
   background-color: #339F77;
+  color:white;
+}
+h3.text-muted{
+  color:#339F77;
+  font-family:monospace;
 }
