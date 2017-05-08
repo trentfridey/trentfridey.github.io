@@ -1,14 +1,7 @@
-body{
-  padding:20px;
-}
-.nav-pills li a{
+.navbar-nav li a{
   color: #339F77;
 }
-.nav-pills li a:hover{
+.navbar-nav li a:hover{
   background-color: #339F77;
   color:white;
-}
-h3.text-muted{
-  color:#339F77;
-  font-family:monospace;
 }
