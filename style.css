@@ -1,7 +1,4 @@
-body{
-  padding:20px;
-}
-h2{
+.container h2{
   color:#339f77;
 }
 .nav.navbar-nav.navbar-right li a{
@@ -15,7 +12,7 @@ h2{
   color:#339F77;
   font-family:"Segoe UI Light" monospace;
 }
-.jumbotron{
+.jumbotron.container{
   background-color:#339f77;
   color:white;
 }
