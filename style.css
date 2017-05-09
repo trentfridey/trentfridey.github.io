@@ -1,8 +1,11 @@
 body {
-  padding-top:200px;
+  padding-top:50px;
 }
 .container h2{
   color:#339f77;
+}
+.container h3 {
+  border-bottom: 2px solid #BBBBBB;
 }
 .nav.navbar-nav.navbar-right li a{
   color: #339F77;
@@ -25,8 +28,7 @@ body {
   color:white;
 }
 .big-margin{
-  margin-top:50px;
-  margin-bottom:50px;
+  margin-top:300px;
 }
 #contact {
   background-color:#339f77;
@@ -35,4 +37,7 @@ body {
 #contact h2{
   background-color:#339f77;
   color:white;
+}
+#message {
+  height:96px;
 }
