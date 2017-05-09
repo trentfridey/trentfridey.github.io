@@ -32,6 +32,9 @@ p{
   background-color:#339f77;
   color:white;
 }
+.container h1{
+  font-family:monospace;
+}
 .big-margin{
   margin-top:250px;
 }
