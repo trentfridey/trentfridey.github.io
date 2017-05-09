@@ -1,5 +1,5 @@
 body {
-  padding-top:50px;
+  padding-top:200px;
 }
 .container h2{
   color:#339f77;
@@ -23,6 +23,10 @@ body {
 .jumbotron{
   background-color:#339f77;
   color:white;
+}
+.big-margin{
+  margin-top:50px;
+  margin-bottom:50px;
 }
 #contact {
   background-color:#339f77;
