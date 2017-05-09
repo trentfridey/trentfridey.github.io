@@ -1,6 +1,9 @@
 body {
   padding-top:50px;
 }
+p{
+  width: 624px;
+}
 .container h2{
   color:#339f77;
 }
@@ -16,14 +19,15 @@ body {
 }
 #brand{
   color:#339F77;
-  font-family:"Segoe UI Light" monospace;
+  font-family:monospace;
 }
 #brand:hover{
   background-color:#339F77;
   color:white;
-  font-family:"Segoe UI Light" monospace;
+  font-family:monospace;
 }
 .jumbotron{
+  height:350px;
   background-color:#339f77;
   color:white;
 }
@@ -40,4 +44,5 @@ body {
 }
 #message {
   height:96px;
+  vertical-align: top;
 }
