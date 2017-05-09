@@ -3,6 +3,7 @@ body {
 }
 p{
   width: 624px;
+  text-align:left;
 }
 .container h2{
   color:#339f77;
@@ -27,12 +28,12 @@ p{
   font-family:monospace;
 }
 .jumbotron{
-  height:350px;
+  height:500px;
   background-color:#339f77;
   color:white;
 }
 .big-margin{
-  margin-top:300px;
+  margin-top:250px;
 }
 #contact {
   background-color:#339f77;
@@ -44,5 +45,4 @@ p{
 }
 #message {
   height:96px;
-  vertical-align: top;
 }
