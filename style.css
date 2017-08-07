@@ -21,30 +21,36 @@ p{
 
 #brand{
   color:#339F77;
-  font-family:monospace;
+  font-family:Consolas, monospace;
 }
 #brand:hover{
   background-color:#339F77;
   color:white;
-  font-family:monospace;
+  font-family:Consolas, monospace;
 }
 .jumbotron{
-  height:500px;
+  height:290px;
   background-color:#339f77;
   color:white;
   box-shadow: inset 0px 0px 10px #222222;
 }
 .container h1{
-  font-family:monospace;
+  font-family:Consolas, monospace;
 }
 .big-margin{
   margin-top:250px;
+  margin-bottom:250px;
 }
 .shadow {
   text-shadow:2px 2px 1px #ccc;
 }
-
+.pic {
+  height:250px;
+  width:250px;
+  margin:20px;
+}
 #contact {
+  border-radius:4px 4px 0px 0px;
   background-color:#339f77;
   color:white;
 }
