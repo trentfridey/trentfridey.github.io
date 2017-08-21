@@ -1,44 +1,114 @@
 <html>
-	<head>
-		<title>
-			TF Code
-		</title>
-		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300|Roboto" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<div class="container">
-			<div>
-				<h1>
-					The TF Project
-				</h1>
-			</div>
-				<hr>
-			<div>
-			<div class="content">
-				<h2>Welcome</h2>	
-				<p> Here's some awesome text. Isn't it awesome? There are probably other
-						words to describe how awesome it is, but the word awesome is awesome.
-						It's like a self-describing word. You know what else is awesome? 
-						Filler paragraphs; they are awesome.
-				</p>
-			</div>
-			<div class="navbar">
-				<ol class="nav">
-					<li>About</li>
-					<li>Code</li>
-					<li>Contact</li>
-					<li>Hire Me</li>
-				</ol>
-			</div>
-			<div style="clear: both"></div><!-- Clear the float -->
-			</div>
-			<div class="push"><!-- for sticky footer -->
-			</div>
-		</div>
-		<div class="footer">
-			Trent Fridey 2017
-		</div>
-	</body>
+<head>
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+  crossorigin="anonymous">
 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/5c3ae5c0b3.js"></script>
+  <title>
+    Portfolio - TF Code
+  </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#top" id="brand">TF Code</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about"><i class="fa fa-user-o"></i> About</a></li>
+          <li><a href="#code"><i class="fa fa-code"></i> Code</a></li>
+          <li><a href="#contact"><i class="fa fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron" id="top">
+    <div class="container">
+    <h1 class="shadow">TF Code</h1>
+    <p>Welcome to my personal portfolio. Website under construction</p>
+  </div>
+  </div>
+  <div class="container big-margin" id="about">
+    <h2>About</h2>
+    <center>
+    <img src="/poparttrentframecircle.svg" alt="A two dimensional representation of a multi-dimensional me!" style="height:200px; width:200px;"/>
+
+    <p> I'm not your average physicist-turned-web-developer.
+      I have a real need to understand why things work and communicate my findings in the most beautiful way possible.
+      Being self-taught and a bit of an academic, I embrace every new subject I encounter with enthusiasm.
+    </p>
+    </center>
+  </div>
+  <hr>
+  <div class="container big-margin" id="code">
+    <h2>Code</h2>
+    <p>A sampling of my recent projects</p>
+    <center>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Sample project #1</h3>
+        <p>Project summary goes here</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Sample project #2</h3>
+        <p>Project summary goes here</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Sample project #3</h3>
+        <p>Project summary goes here</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Sample project #4</h3>
+        <p>Project summary goes here</p>
+      </div>
+    </div>
+  </center>
+  </div>
+  <hr>
+  <div class="container big-margin" id="contact">
+    <h2>Contact</h2>
+    <p>Shoot me a message here and let me know whats up.</p>
+    <form>
+      <div class="row">
+        <div class="col-md-8">
+          <textarea class="form-control" placeholder="Message" rows="5" id="message">
+          </textarea>
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Name" id="name">
+          <input type="text" class="form-control" placeholder="Email" id="email">
+        </div>
+      </div>
+      <div>
+        <div class="row">
+          <div class="col-md-8">
+            <center>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </form>
+    <hr>
+    <footer class="footer">Trent Fridey 2017</footer>
+  </div>
+
+</body>
 </html>

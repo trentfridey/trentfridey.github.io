@@ -1,59 +1,57 @@
-h1 {
-	font-size:48px;
-	font-family:'Abril Fatface', cursive;
-	font-weight: normal;
+body {
+  padding-top:50px;
+}
+p{
+  width: 624px;
+  text-align:left;
+}
+.container h2{
+  color:#339f77;
+}
+.container h3 {
+  border-bottom: 2px solid #BBBBBB;
+}
+.nav.navbar-nav.navbar-right li a{
+  color: #339F77;
+}
+.nav.navbar-nav.navbar-right li a:hover{
+  background-color: #339F77;
+  color:white;
 }
 
-h2 {
-	font-size: 32px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+#brand{
+  color:#339F77;
+  font-family:monospace;
+}
+#brand:hover{
+  background-color:#339F77;
+  color:white;
+  font-family:monospace;
+}
+.jumbotron{
+  height:500px;
+  background-color:#339f77;
+  color:white;
+  box-shadow: inset 0px 0px 10px #222222;
+}
+.container h1{
+  font-family:monospace;
+}
+.big-margin{
+  margin-top:250px;
+}
+.shadow {
+  text-shadow:2px 2px 1px #ccc;
 }
 
-hr {
-	padding: 0px;
-	border-top: medium double #333;
-	width:100%;
+#contact {
+  background-color:#339f77;
+  color:white;
 }
-
-.container {
-  margin: 0px 60px -50px 60px;
-  min-height:100%;
+#contact h2{
+  background-color:#339f77;
+  color:white;
 }
-
-.content {
-	display: inline-block;
-	width: 60%;
-	margin: 40px;
-	float: left;
-}
-
-.navbar {
-	display: inline-block;
-	width: 180px;
-	float: right;
-}
-
-.nav li {
-	list-style: decimal-leading-zero inside none;
-	font-size: 14px;
-	font-family:'Roboto', sans-serif;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 12px;
-	transition:0.5s;
-}
-
-.nav li:hover{
-	font-weight: bold;	
-	box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.2);
-	cursor: pointer;
-}
-
-.push, .footer {
-  height: 50px;
-  text-align: center;
-  font-size: 10px;
-  font-family: sans-serif;
-  color: #999;
+#message {
+  height:96px;
 }
