@@ -1,7 +1,7 @@
-<html>
+<html ng-app="portf">
 	<head>
 		<title>
-			TF Code
+			Torrential Code
 		</title>
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300|Roboto" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
@@ -9,35 +9,38 @@
 	<body>
 		<div class="container">
 			<div>
-				<h1>
-					The TF Project
-				</h1>
+				<a href="#/">
+					<h1>
+						Torrential Code
+					</h1>
+				</a>
 			</div>
 				<hr>
-			<div>
-			<div class="content">
-				<h2>Welcome</h2>	
-				<p> Here's some awesome text. Isn't it awesome? There are probably other
-						words to describe how awesome it is, but the word awesome is awesome.
-						It's like a self-describing word. You know what else is awesome? 
-						Filler paragraphs; they are awesome.
-				</p>
+ 			<div class="page">
+ 				<div class="navbar">
+					<ol class="nav">
+						<a href="#/about"><li>About</li></a>
+						<a href="#/code"><li>Projects</li></a>
+						<a href="#/contact"><li>Contact</li></a>
+						<a href="#/hireme"><li>Hire Me</li></a>
+					</ol>
+				</div>
+				<div ng-view class="content">
+				</div>
+				<div style="clear: both"></div><!-- Clear the float -->
+				</div>
+				<div class="push"><!-- for sticky footer -->
+				</div>
 			</div>
-			<div class="navbar">
-				<ol class="nav">
-					<li>About</li>
-					<li>Code</li>
-					<li>Contact</li>
-					<li>Hire Me</li>
-				</ol>
-			</div>
-			<div style="clear: both"></div><!-- Clear the float -->
-			</div>
-			<div class="push"><!-- for sticky footer -->
-			</div>
-		</div>
 		<div class="footer">
-			Trent Fridey 2017
+			Trent Fridey 2017. Made with <a href="https://angularjs.org/">AngularJS</a>.
+			<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+			<script src="app.js"></script>
 		</div>
 	</body>
 
