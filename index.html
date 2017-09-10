@@ -16,6 +16,14 @@
 				</a>
 			</div>
 				<hr>
+			<div class="mnavbar">
+				<ul class="mnav">
+						<a href="#!/about"><li>About</li></a>
+						<a href="#!/code"><li>Projects</li></a>
+						<a href="#!/contact"><li>Contact</li></a>
+						<a href="#!/hireme"><li>Hire Me</li></a>
+				</ul>
+			</div>
  			<div class="page">
  				<div class="navbar">
 					<ol class="nav">
@@ -25,7 +33,9 @@
 						<a href="#!/hireme"><li>Hire Me</li></a>
 					</ol>
 				</div>
-				<div ng-view class="content">
+				<div class="content">
+					<div ng-view class="view">
+					</div>
 				</div>
 				<div style="clear: both"></div><!-- Clear the float -->
 				</div>
@@ -41,6 +51,7 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 			<script src="app.js"></script>
+			<script src="client.js"></script>
 		</div>
 	</body>
 
