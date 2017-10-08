@@ -47,6 +47,7 @@ p a {
 
 p a:hover{
 	background-color: lightcoral;
+	border-radius: 3px
 }
 
 li {
