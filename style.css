@@ -1,63 +1,198 @@
 body {
-  padding-top:50px;
+	margin: 40px 40px 0px 40px;
 }
-p{
-  width: 624px;
-  text-align:left;
-}
-.container h2{
-  color:#339f77;
-}
-.container h3 {
-  border-bottom: 2px solid #BBBBBB;
-}
-.nav.navbar-nav.navbar-right li a{
-  color: #339F77;
-}
-.nav.navbar-nav.navbar-right li a:hover{
-  background-color: #339F77;
-  color:white;
+h1 {
+  font-size:72px;
+  font-family:'Abril Fatface', cursive;
+  font-weight: normal;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#brand{
-  color:#339F77;
-  font-family:Consolas, monospace;
+h2 {
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
-#brand:hover{
-  background-color:#339F77;
-  color:white;
-  font-family:Consolas, monospace;
+
+h3 {
+  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
-.jumbotron{
-  height:290px;
-  background-color:#339f77;
-  color:white;
-  box-shadow: inset 0px 0px 10px #222222;
+
+hr {
+  padding: 0px;
+  border-top: medium double #333;
+  width:100%;
 }
-.container h1{
-  font-family:Consolas, monospace;
+
+p {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
-.big-margin{
-  margin-top:250px;
-  margin-bottom:250px;
+
+a {
+    text-decoration: none;
 }
-.shadow {
-  text-shadow:2px 2px 1px #ccc;
+
+p a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
-.pic {
-  height:250px;
-  width:250px;
-  margin:20px;
+
+p a:hover{
+  background-color: lightcoral;
+  border-radius: 3px
 }
-#contact {
-  border-radius:4px 4px 0px 0px;
-  background-color:#339f77;
-  color:white;
+
+li {
+  line-height: 1.5;
+  font-size: 18px;
 }
-#contact h2{
-  background-color:#339f77;
-  color:white;
+
+li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
-#message {
-  height:96px;
+
+li a:hover {
+  background-color: lightcoral;
 }
+
+label {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  margin: 0px 60px -50px 60px;
+  min-height:100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex: 4;
+  margin: 0px 0px 0px 20px;
+  height: 60vh;
+}
+
+.view {
+  height: 60vh;
+  padding: 0px 50px 0px 50px;
+  overflow-y: scroll;
+}
+
+.mnavbar {
+  display: none;
+}
+
+.navbar {
+  flex: 1;
+  border-right: 1px solid grey;
+  min-width:180px;
+  max-width:200px;
+}
+
+.nav {
+  height: 60vh;
+  flex-direction: column;
+}
+
+.nav li {
+  list-style: square inside none;
+  font-size: 24px;
+  font-family:'Roboto', sans-serif;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  transition:0.5s;
+  line-height: 1;
+}
+
+
+.nav li:hover{
+  color: lightcoral;
+  font-weight: bold;	
+  border-right: 1px dashed black;
+  box-shadow: -6px 0px 8px -1px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+
+.push, .footer {
+  height: 50px;
+  text-align: center;
+  font-size: 10px;
+  font-family: sans-serif;
+  color: #999;
+}
+
+#icon{
+  display: none;
+}
+
+   /* for experimental fancy one-corner shadow effect
+  .nav li:before{
+    z-index: -1;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    background: rgba(0,0,0,0.2);
+    box-shadow: -8px 2px 6px -6px rgba(0,0,0,0.2);
+    transform: rotate(-3deg);
+  }
+    */
+
+/* Some form stuff
+  input[type='text'] {
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  input[type='text']:focus {
+    border: 1px solid black;
+  }
+
+  button[type='submit']{
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+  }
+
+  button[type='submit']:hover{
+    color: lightcoral;
+    border-color: lightcoral;
+  }
+
+  button[type='submit']:active{
+    color: white;
+    background-color: lightcoral;
+    border: 2px solid lightcoral;
+  }
+
+  textarea {
+    padding: 5px;
+    margin: 10px;
+    font-family: Roboto, sans-serif;
+  }
+*/
