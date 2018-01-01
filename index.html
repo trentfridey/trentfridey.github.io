@@ -1,67 +1,175 @@
-<html ng-app="portf">
-	<head>
-		<title>
-			Torrential Code
-		</title>
-		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300|Roboto" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" media="only screen and (min-device-width:401px)" href="style.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width:400px)" href="mstyle.css">
-	</head>
-	<body>
-		<div class="container">
-			<div id="title">
-				<a href="#!">
-					<h1>
-						Torrential Code
-					</h1>
-				</a>
-			</div>
-      <div id="icon">
-        &#9776;
-      </div>
-				<hr>
-      <center>
-			<div class="mnavbar">
-				<ul class="mnav-inactive" id="mnav">
-						<a href="#!/about"><li>About</li></a>
-            <hr>
-						<a href="#!/code"><li>Projects</li></a>
-            <hr>
-						<a href="#!/contact"><li>Contact</li></a>
-            <hr>
-						<a href="#!/hireme"><li>Hire Me</li></a>
-				</ul>
-			</div>
-      </center>
- 			<div class="page">
- 				<div class="navbar">
-					<ol class="nav">
-						<a href="#!/about"><li>About</li></a>
-						<a href="#!/code"><li>Projects</li></a>
-						<a href="#!/contact"><li>Contact</li></a>
-						<a href="#!/hireme"><li>Hire Me</li></a>
-					</ol>
-				</div>
-				<div class="content">
-					<div ng-view class="view">
-					</div>
-				</div>
-				<div style="clear: both"></div><!-- Clear the float -->
-				</div>
-				<div class="push"><!-- for sticky footer -->
-				</div>
-			</div>
-		<div class="footer">
-			Trent Fridey 2017. Made with <a href="https://angularjs.org/">AngularJS</a>.
-			<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-			<script src="app.js"></script>
-			<script src="client.js"></script>
-		</div>
-	</body>
-
+<html>
+    <head>
+        <title>Torrential Code</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-device-width:401px)" 
+        href="styles.css"/>
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width:400px)"
+        href="mstyles.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <section id="landing">
+                    <a href="#contact"><div class="nav-item"><i class="fas fa-envelope"></i> Contact</div></a>
+                    <a href="#code"><div class="nav-item"><i class="fas fa-code"></i> Projects</div></a>
+                    <a href="#about"><div class="nav-item"><i class="fas fa-address-card"></i> About</div></a>
+                    <div style="clear: both"></div>
+                <center>
+                    <h1>
+                        TORRENTIAL CODE
+                    </h1>
+                    <div class="icons-group">
+                        <a class="btn" href="https://codepen.io/trentfridey"><div class="featured-icon"><i class="fab fa-codepen"></i> CODEPEN</div></a>
+                        <a class="btn" href="https://github.com/trentfridey"><div class="featured-icon"><i class="fab fa-github"></i> GITHUB</div></a>
+                    </div>
+                </center>
+            </section>
+            <section id="about">
+                <div class="vignette">
+                    <h3>About</h3>
+                    <div class="about-group">
+                        <div class='about-portrait'>
+                            <center>
+                                <img class="portrait" src="poparttrentframecircle.svg" alt="A two-dimensional representation of a multi-dimensional me!"/></div>
+                            </center>
+                        <div class='about-text'>
+                            <h5>Hi. I'm Trent.</h5>
+                            <p>
+                                I like to make web apps. I'm a full stack developer with skills in the MEAN stack (that's MongoDB, Express.js, AngularJS, and Node). My current interest is in building responsive front end designs. 
+                                I also like to learn new things (my bachelors was in physics). If you look at some of my <a href="#code">projects</a> below and are interested in speaking with me,
+                                please <a href="#contact">contact</a> me.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-tech">
+                        <center>
+                            <h6>Technologies</h6>
+                            <i class="fab fa-html5 badges" id="html"></i>
+                            <i class="fab fa-css3-alt badges" id="css"></i>
+                            <i class="fab fa-js badges" id="js"></i>
+                            <i class="fab fa-angular badges" id="angular"></i>
+                            <i class="fab fa-node badges" id="node"></i>
+                            <i class="fab fa-git-square badges" id="git"></i>
+                        </center>
+                    </div>
+                </div>
+            </section>
+            <section id="code">
+                <div class="vignette">
+                    <h3>Projects</h3>
+                    <div class="code-group">
+                        <div class="code-card">
+                            <div class="card-img">
+                                <center>
+                                    <a href="https://codepen.io/trentfridey/full/pewoez/"><img src="./rand_pre.png" width="150px" height="150px" /></a>
+                                </center>
+                            </div>
+                            <div class="card-text">
+                                <a href="https://codepen.io/trentfridey/full/pewoez/" class="no-underline"><h6>Random Equation Generator <i class="fas fa-external-link-square-alt"></i></h6></a>
+                                <p>Front End</p>
+                                <p>A minimalist presentation of the most ubiquitous equations in higher mathematics,
+                                    formatted using the MathJax API;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="code-card">
+                           <div class="card-img">
+                                <center>
+                                    <a href="https://codepen.io/trentfridey/full/MpRjLZ/"><img src="./calc_pre.png" width="150px" height="150px" /></a>
+                                </center>
+                            </div>
+                            <div class="card-text">
+                                <a href="https://codepen.io/trentfridey/full/MpRjLZ/" class="no-underline"><h6>Calculator <i class="fas fa-external-link-square-alt"></i></h6></a>
+                                <p>Front End</p>
+                                <p>A fully-functional calculator written in Javascript, with jQuery.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="code-card">
+                           <div class="card-img">
+                                <center>
+                                    <a href="https://codepen.io/trentfridey/full/XRRZRp/"><img src="./simon_pre.png" width="150px" height="150px"/></a>
+                                </center>
+                            </div>
+                            <div class="card-text">
+                                <a href="https://codepen.io/trentfridey/full/XRRZRp/" class="no-underline"><h6>Simon Game <i class="fas fa-external-link-square-alt"></i></h6></a>
+                                <p>Front End</p>
+                                <p>The classic memory game, recreated in the browser with Javascript. Can you make it
+                                    all twenty rounds?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="code-card">
+                            <div class="card-img">
+                                <center>
+                                    <a href="https://codepen.io/trentfridey/">
+                                        <i class="fab fa-codepen icon"></i>
+                                        <p>CodePen</p>
+                                    </a>
+                                </center>
+                            </div>
+                            <div class="card-text">
+                                <a href="https://codepen.io/trentfridey" class="no-underline"><h6>More! <i class="fas fa-external-link-square-alt"></i></h6></a>
+                                <p>Front End</p>
+                                <p>See all front end code on CodePen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-group">
+                        <div class="code-card">
+                            <div class="card-text">
+                                <h6><a href="https://timestampify.glitch.me" class="no-underline">Timestamp Microservice <i class="fas fa-external-link-square-alt"></i></a></h6>
+                                <p>Back End</p>
+                                <p>A microservice written with Express.js which converts UNIX times to
+                                    human-readable date formats and vice versa.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="code-card">
+                            <div class="card-text">
+                                <h6><a href="https://req-header-serv.glitch.me" class="no-underline">Request Header Service <i class="fas fa-external-link-square-alt"></i></a></h6>
+                                <p>Back End</p>
+                                <p>A microservice written with Express.js which returns information about the computer which
+                                    accesses its endpoint.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-group">
+                        <div class="code-card">
+                            <div class="card-img">
+                                <center>
+                                    <a href="https://mgp.glitch.me"><img src="./mgp_pre.png" width="288px" height="150px"/></a>
+                                </center>
+                            </div>
+                            <div class="card-text">
+                                <a href="https://mgp.glitch.me" class="no-underline"><h6>Modular Growing Pixels <i class="fas fa-external-link-square-alt"></i></h6></a>
+                                <p>Full Stack</p>
+                                <p>An exploration of Conway's Game of Life. Session cookies allow you to change the rules of the game,
+                                which leads to a new experience every time. Built with AngularJS, Express.js, and Node.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <div class="vignette">
+                    <div class="contact-group">
+                        <div class="contact-item"><i class="fas fa-envelope icon"></i> <p>trent.fridey _at_ colorado.edu</p></div>    
+                        <div class="contact-item"><a href="https://linkedin/in/trentfridey" class="no-underline" id="linkedin"><i class="fab fa-linkedin icon"></i> <p>/in/trentfridey</p></a></div>
+                        <div class="contact-item"><i class="fas fa-phone icon"></i> <p>214-952-2353</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="push"></div>
+        <footer>
+            <center>
+                Built by Trent Fridey
+            </center>
+            <!-- This page was successfully built without Javascript! -->
+        </footer>
+    </body>
 </html>
