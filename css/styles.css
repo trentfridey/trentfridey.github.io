@@ -172,26 +172,10 @@ a.btn {
     margin-top: 50px;
 }
 .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
-.about-portrait {
-    flex: 3;
-    padding: 30px;
-    vertical-align: top;
-}
-.portrait {
-    width: 125px;
-}
-
 .about-text {
-    flex: 7;
     padding: 30px;
     line-height: 30px;
-    text-align: justify;
-    border-left: 1px solid var(--dark-grey);
 }
 .about-text-header {
     padding: 0.5rem;
@@ -350,17 +334,11 @@ footer {
         padding: 0 80px;
     }
     p {
-        font-size: 28px;
+        font-size: 36px;
     }
     .about-container {
         flex-direction: column;
         flex-wrap: nowrap;
-    }
-    .about-portrait, .about-text {
-        flex: 1;
-    }
-    .about-text { 
-        border: none;
     }
     .about-text-header {
         font-size: 32px;
@@ -373,6 +351,9 @@ footer {
     }
     .badge {
         font-size: 28px;
+    }
+    .timeline-header {
+        font-size: 48px;
     }
     .code-group-header {
         font-size: 32px;
