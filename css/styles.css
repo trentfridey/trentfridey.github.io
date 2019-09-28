@@ -237,32 +237,32 @@ a.btn {
 .timeline {
     border: none;
     width: 100%;
-    border-collapse: collapse;
     margin: 20px auto;
 }
-.timeline thead {
-    border-bottom: 3px solid var(--dark-grey);
-}
+
 .timeline-header {
     padding: 1.5rem;
     font-size: 20px;
     font-family: var(--sans-serif);
     font-weight: bold;
     color: var(--dark-grey);
+    border-bottom: 3px solid var(--dark-grey);
 }
-.timeline-item td {
-    padding: 1.5rem;
+
+.timeline-item {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 80px;
 }
+
 .timeline-item-data {
     font-family: var(--mono);
-    font-size: 16px;
-    width: 10%;
-    position: relative;
     text-align: center;
-    vertical-align: center;
-    border-right: 2px dashed var(--dark-grey);
+    flex: 2;
 }
-.timeline-item-data::before {
+.timeline-item-description::before {
     --dot-radius: 15px;
     content: " ";
     font-size: 10px;
@@ -271,7 +271,7 @@ a.btn {
     line-height: calc(2*var(--dot-radius));
     position: absolute;
     top: calc(50% - var(--dot-radius) - 2px);
-    right: calc(-1*var(--dot-radius) - 3px);
+    left: calc(-1*var(--dot-radius) - 3px);
     width: calc(2*var(--dot-radius));
     height: calc(2*var(--dot-radius));
     border: 2px solid var(--dark-grey);
@@ -279,17 +279,17 @@ a.btn {
     background-image: linear-gradient(to bottom right, var(--orange), var(--peach), var(--blue));
 }
 .timeline-item-description {
+    position: relative;
+    border-left: 2px dashed var(--dark-grey);
     text-align: left;
     font-family: var(--mono);
-    font-size: 16px;
-}
-.timeline-item-description.header {
-    font-weight: bold;
+    flex: 8;
+    min-height: 80px;
+    padding-left: 25px;
 }
 .timeline-item-description p {
     text-align: left;
     font-family: var(--mono);
-    font-size: 16px;
 }
 .code-group{
     margin: 50px 0px 50px 0px;
@@ -372,12 +372,6 @@ footer {
         font-size: 32px;
     }
     .badge {
-        font-size: 28px;
-    }
-    .timeline-header {
-        font-size: 48px;
-    }
-    .timeline-item-description.header {
         font-size: 28px;
     }
     .code-group-header {
