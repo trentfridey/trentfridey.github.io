@@ -18,6 +18,7 @@ body {
 section {
     flex: 1;
     flex-basis: 120vh;
+    padding: 0 80px;
 }
 h1 {
     font-family: var(--serif);
@@ -98,8 +99,6 @@ p > a:hover {
 .container {
     display: flex;
     flex-direction: column;
-    margin-bottom: -50px;
-    min-height: 100%;
 }
 nav {
     height: 48px;
@@ -108,17 +107,17 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
+    align-items: stretch;
 }
 .nav-item {
-    float: right;
-    margin: 10px;
-    max-width: 120px;
-    padding: 10px;
+    display: block;
+    min-width: 120px;
     color: grey;
     text-align: center;
     font-family: sans-serif;
     font-size: 16px;
-    transform: translateX(-25px);
+    text-decoration: none;
+    line-height: 48px;
 }
 .nav-item:hover{
     color: white;
@@ -126,16 +125,13 @@ nav {
     background-image: radial-gradient(50% 50% at bottom, #FFFFFF88 1%, transparent);
     cursor: pointer;
 }
-
-nav a {
-    text-decoration: none;
-}
-#landing {
+section#landing {
     height: 100vh;
     background-image: url(../img/sky.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 0px;
 }
 .landing-content {
     transform: translateY(-50%)
@@ -168,32 +164,30 @@ a.btn {
 #about {
     box-shadow: 0px -20px 25px -16px #333333;
 }
-.vignette {
-    padding: 0px 80px 0px 80px;
-}
-.vignette + .vignette {
-    padding-top: 20px;
-}
 .portfolio-group {
     display: block;
-    width: 80%;
     margin: 0 auto;
 }
 .portfolio-group + .portfolio-group {
     margin-top: 50px;
 }
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 .about-portrait {
-    display: inline-block;
-    max-width: 30%;
+    flex: 3;
     padding: 30px;
     vertical-align: top;
 }
 .portrait {
     width: 125px;
 }
+
 .about-text {
-    display: inline-block;
-    width: 70%;
+    flex: 7;
     padding: 30px;
     line-height: 30px;
     text-align: justify;
@@ -270,7 +264,6 @@ a.btn {
 }
 .timeline-item-data::before {
     --dot-radius: 15px;
-    font-family: "Font Awesome 5 Free";  
     content: " ";
     font-size: 10px;
     font-weight: 900;
@@ -323,13 +316,74 @@ a.btn {
     background-image: linear-gradient(to left, var(--orange), var(--peach), var(--blue));
     border-radius: 5px;
 }
-footer, .push {
-    margin-top: 50px;
+footer {
     font-size: 12px;
     background-color: var(--dark-grey);
     color: var(--blue);
-}
-footer{
     padding: 20px;
     font-family: sans-serif;
+}
+
+@media only screen and (max-device-width: 400px) {
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    nav a {
+        display: block;
+        text-decoration: none;
+        flex: 1;
+    }
+    .nav-item {
+        line-height: 100px;
+        font-size: 48px;
+    }
+    h2.greeting, h2.tagline {
+        font-size: 48px;
+    }
+    section {
+        flex-basis: 100vh;
+        padding: 0 80px;
+    }
+    p {
+        font-size: 28px;
+    }
+    .about-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .about-portrait, .about-text {
+        flex: 1;
+    }
+    .about-text { 
+        border: none;
+    }
+    .about-text-header {
+        font-size: 32px;
+    }
+    .about-text-body {
+        font-size: 28px;
+    }
+    .about-text-body a {
+        font-size: 32px;
+    }
+    .badge {
+        font-size: 28px;
+    }
+    .timeline-header {
+        font-size: 48px;
+    }
+    .timeline-item-description.header {
+        font-size: 28px;
+    }
+    .code-group-header {
+        font-size: 32px;
+    }
+    .code-group-body {
+        font-size: 26px;
+    }
 }
