@@ -1,0 +1,48 @@
+{
+	"personal":{
+		"firstName": "Trent",
+		"lastName": "Fridey",
+		"summary": null,
+		"linkedIn": "https://www.linkedin.com/in/trentfridey",
+		"email": "trent.fridey at colorado.edu",
+		"github": "https://github.com/trentfridey",
+		"website": "https://trentfridey.com"
+		"blog": "https://blog.trentfridey.com"
+	},
+	"education":[
+		{
+			"schoolName": "University of Colorado - Boulder",
+			"startDate": "2011-08-22",
+			"endDate": "2014-12-21",
+			"degree": "Bachelors of Arts",
+			"major": "Physics",
+			"minor": "Mathematics",
+			"honors": "Magna Cum Laude"
+		},
+		{
+			"schoolName": "University of Texas at Dallas",
+			"startDate": "2016-08-22",
+			"endDate": "2018-05-10",
+			"degree": "Masters of Science",
+		        "major": "Business Analytics",
+			"minor": "None",
+			"honors": "None"	
+		}
+	],
+	"experience": [
+		{
+			"role": "Technician",
+			"company": "Wavetrix",
+			"startDate": "2017-01-01",
+			"endDate": "2018-02-12",
+			"current": false
+		},
+		{
+			"role": "Software Developer",
+			"company": "NoiseAware, Inc.",
+			"startDate": "2018-02-13",
+			"endDate": null,
+			"current": true
+		}
+	]
+}
