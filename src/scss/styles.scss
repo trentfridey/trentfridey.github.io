@@ -53,26 +53,6 @@ body {
   }
 }
 
-#subjects h1 {
-  display: block;
-  margin: 0 0 25px 0;
-  border-bottom: 7px solid $primary;
-  font-weight: normal;
-  font-size: 36px;
-  font-family: monospace;
-  background-color: black;
-  padding: 10px 15px;
-  text-align: center;
-}
-
-#subjects h2 {
-  margin: 25px 0;
-  font-weight: normal;
-  font-size: 28px;
-  font-family: sans-serif;
-  color: $primary;
-}
-
 section {
   min-height: 100vh;
   & + section {
@@ -86,29 +66,52 @@ section {
   }
 }
 
+#subjects h1 {
+  display: block;
+  margin: 0 0 25px 0;
+  border-bottom: 7px solid $primary;
+  font-weight: normal;
+  font-size: 32px;
+  font-family: monospace;
+  background-color: black;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#subjects h2 {
+  margin: 16px 0;
+  font-weight: normal;
+  font-size: 28px;
+  font-family: sans-serif;
+  color: $primary;
+}
+
 .subject-card {
   color: white;
   background-image: repeating-linear-gradient(-45deg, black, black 20px, $grey 20px, $grey 40px);
   border: 1px solid $primary;
-  padding: 50px;
-  margin: 50px auto;
-  flex: 0 0 auto;
-  width: 400px;
-  min-height: 550px;
+  padding: 50px 25px;
+  margin: 50px 20px;
+  flex: 1 1 320px;
+  min-width: 320px;
+  max-width: 480px;
+  min-height: 600px;
+  max-height: calc(100vh - 100px);
   font-family: sans-serif;
   &:hover {
     box-shadow: -5px 5px 0px 2px black, -10px 10px 0px 2px $primary;
   }
   &-icon {
+    $diameter: 120px ;
     text-align: center;
-    font-size: 64px;
-    margin: 20px auto;
+    font-size: 52px;
+    margin: 0 auto 20px auto;
     background-color: black;
     border: 2px solid $primary;
-    height: 180px;
-    width: 180px;
+    height: $diameter;
+    width: $diameter;
     border-radius: 150px;
-    line-height: 180px;
+    line-height: $diameter;
   }
   &-summary {
     margin: 10px 0;
@@ -127,11 +130,11 @@ section {
     & ul li {
       flex: 0 0 auto;
       font-family: monospace;
-      font-size: 16px;
+      font-size: 14px;
       border-bottom: 5px solid $grey;
       background-color: $primary;
       padding: 5px 10px;
-      margin: 5px 0;
+      margin: 2px 0;
     }
   }
 }
