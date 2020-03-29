@@ -16,8 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-katex": "^2.0.2"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
