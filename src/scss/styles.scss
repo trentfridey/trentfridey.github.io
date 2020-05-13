@@ -30,6 +30,18 @@ body {
                   -15px 15px 0px 2px black,
 
     }
+    #landing-links {
+      display: block;
+      color: white;
+      & a {
+        font-family: monospace;
+        font-size: 14px;
+        background-color: $primary;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+      }
+    }
   }
   p {
     display: inline-block;
