@@ -40,6 +40,9 @@ body {
         padding: 5px;
         color: black;
         text-decoration: none;
+        &:hover {
+          background-color: white;
+        }
       }
     }
   }
@@ -74,7 +77,7 @@ section {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -110,9 +113,6 @@ section {
   min-height: 600px;
   max-height: calc(100vh - 100px);
   font-family: sans-serif;
-  &:hover {
-    box-shadow: -5px 5px 0px 2px black, -10px 10px 0px 2px $primary;
-  }
   &-icon {
     $diameter: 120px ;
     text-align: center;
@@ -129,6 +129,8 @@ section {
     margin: 10px 0;
     font-style: italic;
     font-family: serif;
+    padding: 10px;
+    background-color: #ffffff33;
   }
   &-tools {
     & ul {
@@ -165,7 +167,7 @@ section {
   font-family: sans-serif;
   color: white;
   & hr {
-    height: 40px;
+    height: 20px;
     border: none;
     background-image: repeating-linear-gradient(-45deg, $grey, $grey 20px, $primary 20px, $primary 40px);
   }
