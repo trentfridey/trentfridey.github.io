@@ -11,60 +11,46 @@ body {
 }
 
 #landing {
-  height: 100vh;
-  display: flex;
-  main {
-    display: block;
-    margin: auto;
-    #block {
-      display: inline-block;
-      vertical-align: baseline;
-      margin: 0 10px;
-      width: 75px;
-      height: 135px;
-      border: 2px solid $primary;
-      padding: 20px 40px;
-      background-image: repeating-linear-gradient(-45deg, black, black 20px, $grey 20px, $grey 40px);
-      box-shadow: -5px 5px 0px 2px black,
-                  -10px 10px 0px 2px $primary,
-                  -15px 15px 0px 2px black,
-
-    }
-    #landing-links {
-      display: block;
-      color: white;
-      & a {
-        font-family: monospace;
-        font-size: 14px;
-        background-color: $primary;
-        padding: 5px;
-        color: black;
-        text-decoration: none;
-        &:hover {
-          background-color: white;
-        }
-      }
-    }
-  }
-  p {
-    display: inline-block;
-    color: $primary;
-    font-family: sans-serif;
-    font-size: 48px;
-    font-weight: bold;
+    height: 100vh;
     position: relative;
-    line-height: 48px;
-    #greeting {
-      color: white;
-      border-bottom: 3px solid $primary;
-      text-transform: uppercase;
-      font-family: monospace;
-      font-size: 16px;
-      font-weight: normal;
-      position: absolute;
-      top: -60px;
-      left: 0;
-    }
+  main {
+      height: 100%;
+      .video {
+          object-fit: cover;
+          width: 100vw;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+      }
+      .overlay {
+          position: relative;
+          height: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(0,0,0,0.5);
+      }
+      .name {
+          color: white;
+          padding: 20px;
+          font-size: 38px;
+          font-family: monospace;
+          text-shadow: 1px 1px 1px #000;
+      }
+      #landing-links {
+          font-family: monospace;
+          color: white;
+          a {
+              font-size: 20px;
+              color: white;
+              text-shadow: 1px 1px 1px #000;
+              font-weight: bold;
+              padding: 5px 10px;
+          }
+      }
   }
 }
 
